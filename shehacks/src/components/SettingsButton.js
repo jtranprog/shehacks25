@@ -6,7 +6,6 @@ function SettingsButton(props) {
   return (
     <button
       {...props}
-      className={"with-text"}
       onClick={() => {
         settingsInfo.setShowSettings(true);
       }}
@@ -23,7 +22,6 @@ function SettingsButton(props) {
           clipRule="evenodd"
         />
       </svg>
-      Settings
     </button>
   );
 }

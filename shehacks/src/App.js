@@ -64,7 +64,6 @@ import Timer from "./components/Timer";
 import Settings from "./components/Settings";
 import SettingsContext from "./context/SettingsContext";
 import MotivationalMessages from "./components/MotivationalMessages";
-import './App.css';
 import BlindBox from './components/blind-box';
 import ProgressBar from './components/progressbar';
 
@@ -74,28 +73,32 @@ function App() {
   const [breakMinutes, setBreakMinutes] = useState(5);
 
   return (
-    <SettingsContext.Provider
-      value={{
-        showSettings,
-        setShowSettings,
-        workMinutes,
-        breakMinutes,
-        setWorkMinutes,
-        setBreakMinutes,
-      }}
-    >
-      <div className="App">
-        <MotivationalMessages /> {/* Add MotivationalMessages here */}
-        {showSettings ? <Settings /> : <Timer />}
-      </div>
-    </SettingsContext.Provider>
-    <div className="App">
+    <main>
+      <SettingsContext.Provider
+        value={{
+          showSettings,
+          setShowSettings,
+          workMinutes,
+          breakMinutes,
+          setWorkMinutes,
+          setBreakMinutes,
+        }}
+      >
+        <div className="App">
+          <MotivationalMessages /> {/* Add MotivationalMessages here */}
+          {showSettings ? <Settings /> : <Timer />}
+        </div>
+      </SettingsContext.Provider>
+
+    {/* <div className="App">
         <img src={'./images/logo.png'} className="App-logo" alt="logo" />
         <div className='blindbox'>
         <BlindBox /></div>
         <div className='progressbar'>
         <ProgressBar /></div>
-    </div>
+    // </div> */}
+    
+    </main>
   );
 }
 

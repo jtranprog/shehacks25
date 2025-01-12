@@ -1,6 +1,14 @@
 function BackButton(props) {
   return (
-    <button {...props} className={"with-text"}>
+    <button {...props} className={"with-text"} 
+    style={{
+      marginTop: "50px",
+      display: "flex", // Aligns the icon and text side by side
+      alignItems: "center", // Vertically centers the content
+      justifyContent: "center", // Horizontally centers the content if needed
+      width: "auto",
+    }}
+>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"

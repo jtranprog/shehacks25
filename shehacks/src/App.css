@@ -5,6 +5,15 @@
   --green: #4aec8c;
 }
 
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Adjust as per your layout needs */
+  justify-content: center; /* Center content if needed */
+  align-items: center;
+}
+
 body {
   background-color: #f8edeb;
   color: #eee;
@@ -24,7 +33,7 @@ button {
   color: #718a72;
   border: none;
   display: inline-block;
-  width: 70px;
+  width: 100px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Gentium Plus", serif;
@@ -36,6 +45,7 @@ button-container {
   margin-top: 20px; /* Space between the circle and buttons */
   gap: 10px; /* Spacing between buttons */
 }
+
 button:hover {
   transform: scale(1.1); /* Slightly enlarge button on hover */
 }
@@ -44,20 +54,23 @@ button:active {
   outline: none; /* Ensure focus outline is removed when the button is focused */
   transform: scale(0.9);
 }
+
 button.with-text {
+  display: flex;
+  align-items: center;
   width: auto;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 1.4rem;
-  line-height: 36px;
+  font-size: 5vw;
   font-family: "Gentium Plus", serif;
+
 }
+
 button.with-text svg {
-  width: 36px;
+  width: 45px;
   float: left;
   margin-right: 5px;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -81,11 +94,12 @@ label {
   text-transform: capitalize;
 }
 .motivational-message {
+  width: 500px;
   justify-content: center;
   display: flex;
   font-family: "Times New Roman", Times, serif;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 30px;
   font-style: italic;
   color: #718a72;
   margin-top: 5px;

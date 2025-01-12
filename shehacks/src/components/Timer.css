@@ -32,6 +32,7 @@ button.with-text {
   font-size: 1.4rem;
   line-height: 36px;
 }
+
 button.with-text svg {
   width: 36px;
   float: left;
