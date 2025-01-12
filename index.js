@@ -43,10 +43,6 @@ async function monitorActiveWindow() {
     }
 }
 
-// Start monitoring at a fixed interval
-function startMonitoring() {
-    setInterval(monitorActiveWindow, 60000); // Check every 1 min (60000secs)
-}
 
 function createMainWindow(){
     const mainWindow = new BrowserWindow({
@@ -62,7 +58,7 @@ function createMainWindow(){
     });
 
     mainWindow.loadURL('http://localhost:3000');
-    setInterval(monitorActiveWindow, 10000);
+    setInterval(monitorActiveWindow, 60000); // Check every 1 min (60000secs)
 }
 
 app.whenReady().then(createMainWindow);
