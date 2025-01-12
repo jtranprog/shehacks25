@@ -73,10 +73,14 @@ button.with-text svg {
 
 
 .App-logo {
-  height: 40vmin;
   width: 100px;
   height: 120px;
-  margin: 20px;
+  justify-content: left;
+  justify-items: left;
+  align-items: left;
+  margin-right: 1600px;
+  margin-bottom: 1000px;
+  margin-top: -60px;
   pointer-events: none;
 }
 

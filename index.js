@@ -1,10 +1,15 @@
-const {app, BrowserWindow,Notification} = require('electron');
+const {app, BrowserWindow,Notification,ipcMain} = require('electron');
 const url = require('url');
 
 const path = require("path");
 const NOTIFICATION_TITLE = 'Reminder Notification';
 const NOTIFICATION_BODY = 'get back on topic';
 let count = 0;
+let total_time = 0;
+
+ipcMain.handle('total-time', () => {
+  return total_time;  // Return the current total_time value
+});
 
 function showNotification () {
     const notification = new Notification({ 
@@ -35,6 +40,7 @@ async function monitorActiveWindow() {
     const activeWin = await activeWindow();
     if(activeWin?.owner?.name?.toLowerCase().includes("code")) {
         count = 0;
+        total_time++;
         console.log(`good`);
     }else{
         count++;
@@ -44,7 +50,6 @@ async function monitorActiveWindow() {
         }
     }
 }
-
 
 let mainWindow;
 
@@ -59,7 +64,12 @@ function createMainWindow() {
   });
     mainWindow.loadURL('http://localhost:3000');
     setInterval(monitorActiveWindow, 60000); // Check every 1 min (60000secs)
-
+    console.log(total_time);
+    setInterval(() => {
+      if (mainWindow) {
+        mainWindow.webContents.send('total-time', total_time);
+      }
+    }, 1000);  // Send 'total-time' every second    
 }
 
 app.whenReady().then(createMainWindow);

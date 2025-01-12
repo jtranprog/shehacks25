@@ -90,13 +90,13 @@ function App() {
         </div>
       </SettingsContext.Provider>
 
-    {/* <div className="App">
+    <div className="App">
         <img src={'./images/logo.png'} className="App-logo" alt="logo" />
-        <div className='blindbox'>
-        <BlindBox /></div>
+        {/* <div className='blindbox'>
+        <BlindBox /></div> */}
         <div className='progressbar'>
-        <ProgressBar /></div>
-    // </div> */}
+          <ProgressBar /></div>
+       </div>
     
     </main>
   );

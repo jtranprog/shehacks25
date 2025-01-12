@@ -73,7 +73,7 @@ const Timer = () => {
   return (
     <div>
       {/* Timer Display */}
-      <div style={{ width: "460px", margin: "0 auto", marginTop: "10px" }}>
+      <div style={{ width: "440px", margin: "0 auto", marginTop: "10px" }}>
         <CircularProgressbar
           value={percentage}
           text={`${minutes}:${seconds}`}

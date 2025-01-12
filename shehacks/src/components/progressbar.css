@@ -1,12 +1,10 @@
 .barbody{
     font-family: 'Roboto', Arial , sans-serif;
     padding: 0;
-    margin: 0;
+    margin-right: 200px;
+    margin-top: 500px;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    display: inline-block;
   }
   .line {
     width:500px;
@@ -14,6 +12,8 @@
   .progress-bar{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .progress-bar .line{
