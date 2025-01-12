@@ -1,16 +1,13 @@
 
 import './App.css';
+import BlindBox from './components/blind-box';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={'logo.png'} className="App-logo" alt="logo" />
-        <button className="start">
-          start
-        </button>
-        
-      </header>
+        <img src={'./images/logo.png'} className="App-logo" alt="logo" />
+        <div className='blindbox'>
+        <BlindBox /></div>
     </div>
   );
 }

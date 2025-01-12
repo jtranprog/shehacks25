@@ -1,16 +1,20 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
   height: 40vmin;
+  width: 100px;
+  height: 120px;
+  margin: 20px;
   pointer-events: none;
-  margin-left: -30%;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 5s linear;
   }
 }
 
@@ -39,7 +43,11 @@
 }
 
 .start {
-  margin-left: -30%;
   width: 100px;
   height: 30px;
+}
+
+.blindbox{
+  width: 700px;
+  height: 700px;
 }
