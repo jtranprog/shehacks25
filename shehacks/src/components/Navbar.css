@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8edeb; /* Matches the app's background */
+  padding: 10px 20px;
+  border-bottom: 2px solid #f7d4df; /* Optional: Bottom border for separation */
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust logo size */
+}
+
+.navbar-heart img {
+  height: 30px; /* Adjust heart icon size */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-heart img:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+}
