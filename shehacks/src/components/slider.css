@@ -1,0 +1,31 @@
+label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Gentium Plus", serif;
+}
+
+.slider {
+  height: 8px;
+  border-radius: 4px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.thumb {
+  height: 24px;
+  width: 24px;
+  background: #ff99c8;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -8px; /* Adjust this value to align thumb with track center */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider.green {
+  background: #ddd;
+}
+
+.slider.green .thumb {
+  background: #e7c6ff;
+}
