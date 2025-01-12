@@ -7,6 +7,7 @@
 // // import Navbar from "./components/Navbar";
 // // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
 // function App() {
 //   const [showSettings, setShowSettings] = useState(false);
 //   const [workMinutes, setWorkMinutes] = useState(25);
@@ -63,6 +64,9 @@ import Timer from "./components/Timer";
 import Settings from "./components/Settings";
 import SettingsContext from "./context/SettingsContext";
 import MotivationalMessages from "./components/MotivationalMessages";
+import './App.css';
+import BlindBox from './components/blind-box';
+import ProgressBar from './components/progressbar';
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);
@@ -85,6 +89,13 @@ function App() {
         {showSettings ? <Settings /> : <Timer />}
       </div>
     </SettingsContext.Provider>
+    <div className="App">
+        <img src={'./images/logo.png'} className="App-logo" alt="logo" />
+        <div className='blindbox'>
+        <BlindBox /></div>
+        <div className='progressbar'>
+        <ProgressBar /></div>
+    </div>
   );
 }
 

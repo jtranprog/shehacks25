@@ -15,6 +15,7 @@ main {
   max-width: 100px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
 }
 
 button {
@@ -58,6 +59,21 @@ button.with-text svg {
   margin-right: 5px;
 }
 
+.App-logo {
+  height: 40vmin;
+  width: 100px;
+  height: 120px;
+  margin: 20px;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+
 label {
   display: block;
   margin-bottom: 10px;
@@ -91,4 +107,14 @@ label {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start {
+  width: 100px;
+  height: 30px;
+}
+
+.blindbox{
+  width: 700px;
+  height: 700px;
 }
