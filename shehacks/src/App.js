@@ -1,16 +1,17 @@
 
 import './App.css';
+import BlindBox from './components/blind-box';
+import ProgressBar from './components/progressbar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={'logo.png'} className="App-logo" alt="logo" />
-        <button className="start">
-          start
-        </button>
-        
-      </header>
+        <img src={'./images/logo.png'} className="App-logo" alt="logo" />
+        <div className='blindbox'>
+        <BlindBox /></div>
+        <div className='progressbar'>
+        <ProgressBar /></div>
     </div>
   );
 }
