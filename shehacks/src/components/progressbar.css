@@ -1,0 +1,47 @@
+.barbody{
+    font-family: 'Roboto', Arial , sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .line {
+    width:500px;
+  }
+  .progress-bar{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .progress-bar .line{
+    height: 15px;
+    background: #e8e8e8;
+    border-radius: 7px;
+    position: relative;
+  }
+  
+  .progress-bar .label{
+    font-size: 30px;
+  }
+  
+  .progress-bar > .line > span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: red;
+    border-radius: 10px;
+  }
+  
+  
+  @keyframes animationLoaded{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
