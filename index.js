@@ -68,6 +68,7 @@ function createMainWindow() {
     setInterval(() => {
       if (mainWindow) {
         mainWindow.webContents.send('total-time', total_time);
+        console.log(total_time);
       }
     }, 1000);  // Send 'total-time' every second    
 }

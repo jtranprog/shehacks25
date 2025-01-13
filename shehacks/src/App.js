@@ -66,6 +66,7 @@ import SettingsContext from "./context/SettingsContext";
 import MotivationalMessages from "./components/MotivationalMessages";
 import BlindBox from './components/blind-box';
 import ProgressBar from './components/progressbar';
+import ChatBox from './components/Chatbox';
 
 function App() {
   const [showSettings, setShowSettings] = useState(false);
@@ -97,6 +98,9 @@ function App() {
         <div className='progressbar'>
           <ProgressBar /></div>
        </div>
+       <div className="chatbox-container">
+          <ChatBox />  {/* Add ChatBox here */}
+        </div>
     
     </main>
   );
