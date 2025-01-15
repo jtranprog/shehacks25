@@ -4,13 +4,53 @@
   --red: #f54e4e;
   --green: #4aec8c;
 }
+/* .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+} */
 
+/* .main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.blindbox-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbox-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 10;
+} */
 .App {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; /* Adjust as per your layout needs */
-  justify-content: center; /* Center content if needed */
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -62,7 +102,6 @@ button.with-text {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 5vw;
   font-family: "Gentium Plus", serif;
-
 }
 
 button.with-text svg {
@@ -71,19 +110,23 @@ button.with-text svg {
   margin-right: 5px;
 }
 
-
 .App-logo {
   width: 100px;
-  height: 120px;
-  justify-content: left;
-  justify-items: left;
-  align-items: left;
-  margin-right: 1600px;
-  margin-bottom: 1000px;
-  margin-top: -60px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   pointer-events: none;
 }
 
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  pointer-events: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -132,7 +175,28 @@ label {
   height: 30px;
 }
 
-.blindbox{
-  width: 700px;
-  height: 700px;
+.progressbar-label {
+  width: 900%;
+  max-width: 1800px;
+  margin: 20px auto;
+  text-align: center;
+}
+.blindbox-section {
+  position: absolute; /* Keeps it positioned */
+  left: 10%; /* Position it to the left of the timer */
+  top: 40%; /* Center it vertically in the viewport */
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 6.5rem; /* Ensure the 3D effect is applied */
+  user-select: none;
+  overflow: visible; /* Prevent content clipping */
 }

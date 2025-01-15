@@ -5,12 +5,19 @@ const BlindBox = () => {
   const [boxOpened, setBoxOpened] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const [boxInnerText, setBoxInnerText] = useState("");
+  // const sonnys = [
+  //   ".././images/sonny1.png",
+  //   ".././images/sonny2.png",
+  //   ".././images/sonny3.png",
+  //   ".././images/sonny4.png",
+  //   ".././images/sonny5.png",
+  // ];
   const sonnys = [
-    ".././images/sonny1.png",
-    ".././images/sonny2.png",
-    ".././images/sonny3.png",
-    ".././images/sonny4.png",
-    ".././images/sonny5.png",
+    "/images/sonny1.png",
+    "/images/sonny2.png",
+    "/images/sonny3.png",
+    "/images/sonny4.png",
+    "/images/sonny5.png",
   ];
   let sonnyDiscovered = false;
   let sonnyDone;

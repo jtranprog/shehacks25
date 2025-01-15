@@ -1,4 +1,4 @@
-.barbody{
+/* .barbody{
     font-family: 'Roboto', Arial , sans-serif;
     padding: 0;
     margin-right: 200px;
@@ -44,4 +44,57 @@
     100%{
       width: 100%;
     }
+  } */
+.barbody {
+  font-family: "Roboto", Arial, sans-serif;
+  padding: 0;
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 50px; /* Adjust top margin */
+  height: auto; /* Remove fixed height */
+  display: flex; /* Use flex for alignment */
+  justify-content: center;
+  width: auto;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px; /* Make it responsive */
+  margin: 20px auto;
+}
+
+.progress-bar .line {
+  width: 100%;
+  height: 15px;
+  background: #e8e8e8;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar > .line > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: pink;
+  border-radius: 7px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-bar .label {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+@keyframes animationLoaded {
+  0% {
+    width: 0%;
   }
+  100% {
+    width: 100%;
+  }
+}

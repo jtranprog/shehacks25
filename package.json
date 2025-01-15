@@ -26,10 +26,10 @@
     "framer-motion": "^11.17.0",
     "get-windows": "^9.2.0",
     "path-browserify": "^1.0.1",
-    "react": "^19.0.0",
+    "react": "^18.2.0",
     "react-app-rewired": "^2.2.1",
     "react-circular-progressbar": "^2.1.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^7.1.1",
     "react-slider": "^2.0.6"
   }
